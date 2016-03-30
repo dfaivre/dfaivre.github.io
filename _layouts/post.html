@@ -13,7 +13,7 @@ layout: default
   </div>
 
   
- {% if page.comments %}
+ {% unless page.hide_comments %}
     {% include disqus.html %}
- {% endif %}
+ {% endunless %}
 </article>
