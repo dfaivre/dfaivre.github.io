@@ -5,7 +5,7 @@ date:   2016-03-30
 tags: jekyll disqus
 ---
 
-God this took a long time.  I finally just used the [Jekyll Now](https://github.com/barryclark/jekyll-now/blob/master/_includes/disqus.html)
+God this took a long time.  I finally just used the [Jekyll Now](https://github.com/barryclark/jekyll-now/blob/master/_includes/disqus.html){:target="_blank"}
 starter project and it magically worked:
 
 **Add disqus.html to _includes**
