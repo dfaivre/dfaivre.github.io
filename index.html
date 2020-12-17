@@ -1,23 +1,108 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<div class="home">
+  <title>dfaiv-dev</title>
 
-  <!--<h1 class="page-heading">Posts</h1>-->
+  <!-- favicon and manifest -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+  <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/assets/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div>
+  <div class="container mx-auto my-3 px-4 md:max-w-screen-md">
+    <div class="sm:flex sm:items-center">
+      <img class="rounded-lg w-8 h-8 sm:ml-auto sm:mt-2 sm:order-last" src="assets/dfaiv-dev-trainglify-01.png"
+           alt="dfaiv-logo">
+      <h1 class="text-5xl font-light">David Faivre</h1>
+    </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <!-- Contact -->
+    <div class="text-sm flex items-center flex-wrap">
+      <div class="mr-1">
+        <span class="text-gray-500">Software Engineer</span>
+      </div>
+      <div>
+        <span class="mr-1 font-light">|</span>
+        <a href="mailto:faivre@gmail.com">
+          faivre@gmail.com
+        </a>
+      </div>
+    </div>
 
-  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+    <!-- Profile Links -->
+    <div class="mt-5">
+      <h2>Profiles</h2>
+      <div class="flex items-center flex-wrap">
+        <div class="flex items-center mr-1">
+          <a href="https://standardresume.co/r/jsco-HQMKy4Fj0DVaz_wa" target="_blank">Resume</a>
+        </div>
+        <div class="flex items-center mr-1">
+          <span class="mr-1 font-light">|</span>
+          <a href="https://stackoverflow.com/users/79113/david-faivre" target="_blank">StackOverflow</a>
+        </div>
+        <div class="flex items-center mr-1">
+          <span class="mr-1 font-light">|</span>
+          <a href="https://www.hackerrank.com/faivre" target="_blank">HackerRank</a>
+        </div>
+        <div class="flex items-center mr-1">
+          <span class="mr-1 font-light">|</span>
+          <a href="https://www.linkedin.com/in/david-faivre-6bb8493/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
 
+    <!-- Code Samples -->
+    <div class="mt-5">
+      <h2>Code Samples</h2>
+      <h3 class="mt-1 text-gray-700">
+        Python Machine Learning Proof of Concept (2018)
+      </h3>
+      <p>
+        <a href="https://github.com/dfaiv-dev/python-ml-poc-2018" target="_blank">Source code</a>
+      </p>
+
+      <h3 class="mt-4 text-gray-700">
+        Coding Challenges
+      </h3>
+      <p>
+        Every once in a while I do some code challenge practice.
+        <a href="https://github.com/dfaiv-dev/python-ml-poc-2018" target="_blank">Proof of work here.</a>
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="border-t mt-6 mb-2"></div>
+    <div class="flex items-center flex-wrap text-sm text-gray-400">
+      <div class="flex items-center mr-1">
+        <a href="https://www.netlify.com/" target="_blank"
+           class="flex items-center text-gray-400 no-underline hover:text-gray-600 hover:underline">
+          <span>Hosting</span>
+          <img src="assets/netlify-logos/full-logo-light-simple.png" class="ml-1 h-3"
+               alt="netlify-logo"></a>
+      </div>
+      <div class="flex items-center">
+        <span class="mr-1">|</span>
+        <a href="https://github.com/dfaiv-dev/dfaiv-dev.github.io" target="_blank"
+           class="flex items-center text-gray-400 no-underline hover:text-gray-600 hover:underline">
+          <span>Source Code</span>
+          <img class="ml-1 h-3"
+               src="assets/GitHub-Mark-64px.png"
+               alt="github-mark"></a></div>
+    </div>
+
+  </div>
 </div>
+</body>
+</html>

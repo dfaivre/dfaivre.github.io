@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-3xl font-light;
+    }
+    h2 {
+        @apply text-2xl font-light;
+    }
+    h3 {
+        @apply text-lg;
+    }
+    a {
+        @apply text-indigo-800 underline;
+    }
+    a:hover {
+        @apply text-indigo-600 no-underline;
+    }
+}
+

@@ -1,0 +1,49 @@
+{
+  "name": "dfaiv-dev-githubio",
+  "version": "0.1.0",
+  "description": "public dev landing page for dfaiv",
+  "main": "index.html",
+  "scripts": {
+    "watch": "npm-watch",
+    "serve": "live-server",
+    "start": "run-p watch serve",
+    "build:theme": "postcss src/theme/theme.css -o assets/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "watch": {
+    "build:theme": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": [
+        "css"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfaiv-dev/dfaiv-dev.github.io.git"
+  },
+  "keywords": [
+    "profile",
+    "githubio"
+  ],
+  "author": "dfaiv",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/dfaiv-dev/dfaiv-dev.github.io/issues"
+  },
+  "homepage": "https://github.com/dfaiv-dev/dfaiv-dev.github.io#readme",
+  "dependencies": {
+    "autoprefixer": "^10.0.2",
+    "normalize.css": "^8.0.1",
+    "tailwindcss": "^2.0.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "npm-watch": "^0.7.0",
+    "postcss": "^8.1.10",
+    "postcss-cli": "^8.3.0"
+  }
+}
